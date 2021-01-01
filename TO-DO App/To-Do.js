@@ -73,10 +73,11 @@ function checkOrDel(e){
 function clrList(e)
 {
      //listItems.style.display= 'none';
-     //e.preventDefault();
-     listItems.remove();
+    e.preventDefault();
+    var lis = document.querySelectorAll('#items li');
+    for(var i=0; li=lis[i]; i++) 
+    {
+        li.parentNode.removeChild(li);
+    }
      
-     
-     
-    
 }
